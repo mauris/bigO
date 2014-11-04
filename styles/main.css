@@ -24,3 +24,8 @@ div.welcome-card{
 .syntaxhighlighter{
     padding:5px 3px;
 }
+
+#problemContainer
+{
+    display:none;
+}
