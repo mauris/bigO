@@ -15,7 +15,7 @@ var bigO = (function ($) {
     var events = {
         'iterative.run': function() {
             $("#welcomeContainer").onAnimateEnd(function(){
-                
+                $("#problemContainer").css('display', 'block').addClass('animated bounceInUp');
             }).addClass('animated bounceOutUp');
         }
     }
