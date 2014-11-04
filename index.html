@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Big-O Notation Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="welcomeCard" class="welcome-card">
+                    <h1>
+                        Welcome to learning the<br>
+                        <span class="title">Big-O notation</span>.
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row row-margin-top">
+            <div class="col-md-6">
+                <div class="">
+                    <code class="brush: js">
+                        function iterate(arr)
+                        {
+                            for(var i = 0; i &lt; arr.length; i++) {
+                                for (var j = i; j &lt; arr.length; j += 2) {
+                                    console.log(arr[i]);
+                                }
+                            }
+                        }
+                    </code>
+
+                    <a href="#" class="btn btn-lg btn-default btn-block">Iterative Analysis</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="">
+                    <code class="brush: js">
+                        function sort(arr, i, j)
+                        {
+                            if (i &lt; j) {
+                                var mid = (i + j) / 2;
+                                sort(arr, i, mid);
+                                sort(arr, mid + 1, j);
+                            }
+                        }
+                    </code>
+                    <a href="#" class="btn btn-lg btn-default btn-block">Recursive Analysis</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    (function($){
+        $('#welcomeCard').addClass('animated bounceInDown');
+        SyntaxHighlighter.config.tagName = "code";
+        SyntaxHighlighter.defaults['toolbar'] = false;
+        SyntaxHighlighter.all();
+    })(jQuery);
+    </script>
+</body>
+</html>

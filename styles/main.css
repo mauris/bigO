@@ -1,0 +1,25 @@
+@import url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css');
+@import url('//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css');
+@import url('//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shCore.min.css');
+@import url('//cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/styles/shThemeMidnight.css');
+
+h1 span.title{
+    font-size:200%;
+}
+
+div.welcome-card{
+    background: #EAEAEA;
+    padding:60px 50px;
+}
+
+.row-margin-top{
+    margin-top:20px;
+}
+
+.syntaxhighlighter table .container:before {
+    display: none !important;
+}
+
+.syntaxhighlighter{
+    padding:5px 3px;
+}
