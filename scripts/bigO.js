@@ -6,6 +6,12 @@ var bigO = (function ($) {
         }
     })
 
+    var iterativeProblems = [
+        {
+            'solution': 'O(n)'
+        }
+    ]
+
     var events = {
         'iterative.run': function() {
             $("#welcomeContainer").onAnimateEnd(function(){
