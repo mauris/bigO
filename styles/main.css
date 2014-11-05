@@ -25,6 +25,14 @@ div.welcome-card{
     padding:5px 3px;
 }
 
+#mainContainer{
+    position:relative;
+}
+
+#problemContainer, #welcomeContainer{
+    position:absolute;
+}
+
 #problemContainer
 {
     display:none;
