@@ -1,4 +1,5 @@
 var bigO = (function ($) {
+    var bigO = [];
 
     jQuery.fn.extend({
         onAnimateEnd: function(doSomething) {
@@ -28,5 +29,5 @@ var bigO = (function ($) {
         }
     });
 
-    return [];
+    return bigO;
 })(jQuery);
