@@ -14,10 +14,18 @@ var bigO = (function ($) {
     ]
 
     var events = {
+        'welcome.show': function() {
+            $("#problemContainer").onAnimateEnd(function(){
+                $("#problemContainer").css('display', 'none');
+                $("#welcomeContainer").removeClass('bounceOutUp').addClass('animated bounceInDown');
+            }).addClass('animated bounceOutDown');
+            return false;
+        },
         'iterative.run': function() {
             $("#welcomeContainer").onAnimateEnd(function(){
-                $("#problemContainer").css('display', 'block').addClass('animated bounceInUp');
+                $("#problemContainer").css('display', 'block').removeClass('bounceOutDown').addClass('animated bounceInUp');
             }).addClass('animated bounceOutUp');
+            return false;
         }
     }
 
@@ -25,7 +33,7 @@ var bigO = (function ($) {
         var eventName = $(this).data('handler');
         if (events[eventName]) {
             var func = events[eventName];
-            func();
+            return func();
         }
     });
 
